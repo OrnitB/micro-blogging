@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0 0 2% 0; /*consider changing to margin: 2% 2% 2% 2%;*/
+}
+
+#NavBar {
+  /* position: fixed; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2%;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(110, 105, 105, 0.363);
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  border: 1px solid rgba(180, 173, 173, 0.76);
+  border-radius: 2px;
+  padding: 5%;
+  color: rgb(107, 106, 106);
+  transition-duration: 0.4s;
+  margin-top: 5%;
+}
+
+a:hover {
+  color: white;
+  background-color: #25394d;
+  border: none;
+}
+
+a:focus {
+  color: white;
+  background-color: #25394d;
+  border: none;
+}
+
+.h2 {
+  color: rgb(107, 106, 106);
+  padding-top: 4px;
+}
+
+#navbarItems {
+  display: flex;
+  align-items: center;
+  margin-left: 3%;
+  width: 90%;
+  left: 0;
+}
+
+#navbarButton {
+  margin-left: 5%;
+}
+
+.ul {
+  margin-right: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.userName {
+  margin-right: 5%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+textarea {
+  resize: none;
+  width: 30rem;
+  height: 15rem;
+  table-layout: fixed;
+  border: 1px solid rgb(190, 182, 182);
+}
+
+.submitButton {
+  transition-duration: 0.4s;
+  background-color: white;
+  border-radius: 2px;
+  border: 1px solid rgb(190, 182, 182);
+  width: 100px;
+  height: 35px;
+}
+
+.submitButton:hover {
+  background-color: #6a99ff;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.submitButton:hover:disabled {
+  background-color: brown;
+}
+
+.specificTweet {
+  word-wrap: break-word;
+  color: white;
+  margin-top: 3%;
+  padding: 3% 3% 3% 3%;
+  background-color: #25394d;
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px 3px rgba(110, 105, 105, 0.363);
+}
+
+.nameAndDate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.allTweets {
+  width: 80%;
+  margin: 2% 0 0 0;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #464c50;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+  margin: 10% 0 0 45%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#usernameForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.usernameButton {
+  transition-duration: 0.4s;
+  background-color: white;
+  border-radius: 2px;
+  border: 1px solid rgb(190, 182, 182);
+  width: 100px;
+  height: 55px;
+}
+
+.usernameButton:hover {
+  background-color: #6a99ff;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.usernameInput {
+  width: 50%;
+  border: 1px solid rgb(190, 182, 182);
+}
+
+#buttonAndCharactersCount {
+  display: flex;
+  justify-content: space-between;
+}
+
+.charactersRemaining {
+  align-self: center;
+}
+
+.welcomeUser {
+  padding-right: 1%;
+}
